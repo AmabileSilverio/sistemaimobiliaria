@@ -8,7 +8,7 @@ class Database
     private function __construct()
     {
         $host = "localhost";
-        $dbname = "imobiliariaJG";
+        $dbname = "sistemaimobiliaria";
         $username = "root";
         $password = "";
 

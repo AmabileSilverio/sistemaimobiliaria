@@ -1,22 +1,12 @@
 <?php
-require_once '../app/models/Cidade.php';
 
-//Criando Objeto
-$cidade = new Cidade();
+require_once '../app/controllers/CidadeController.php';
 
-//Atribuindo valores diretamente
+$controller = new CidadeController();
 
-$cidade->id = 1;
-$cidade->nome = "Itapira";
-$cidade->estado = "SP";
+// Para testar inserção
+$controller->store();
 
-echo "<pre>";
-var_dump($cidade);
-echo "</pre>";
+// Para testar o listar
+$controller->index();
 
-//index.php será o pronto de entrada do sistema.
-
-echo "<h1>Imobiliaria JG</h1>";
-echo "<p>Projeto iniciado com sucesso.</p>";
-
-?>
